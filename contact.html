@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="İletişim formu ve SSS — Genç Meclis Simülasyonu.">
+  <title>İletişim | Genç Meclis Simülasyonu Programı</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,600;0,700;1,400&family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,500;0,9..40,600;0,9..40,700;1,9..40,400&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body data-page="contact">
+  <div id="page-loader" class="page-loader" aria-hidden="true">
+    <div class="loader-inner"><div class="loader-emblem"></div><p class="loader-text">Genç Meclis</p><div class="loader-bar"><span class="loader-bar-fill"></span></div></div>
+  </div>
+  <a href="#main-content" class="skip-link">İçeriğe geç</a>
+  <div class="site-top" id="site-header">
+    <div class="site-top__bg" aria-hidden="true"></div>
+    <div class="header-inner">
+      <a href="index.html" class="logo-link"><span class="logo-mark">GM</span><span class="logo-text">Genç Meclis</span></a>
+      <button type="button" class="nav-toggle" id="nav-toggle" aria-expanded="false" aria-controls="primary-nav" aria-label="Menü"><span></span><span></span><span></span></button>
+      <nav class="primary-nav" id="primary-nav" aria-label="Ana menü">
+        <ul>
+          <li><a href="index.html" class="nav-link">Ana Sayfa</a></li>
+          <li><a href="about.html" class="nav-link">Kurumsal</a></li>
+          <li><a href="team.html" class="nav-link">Ekip</a></li>
+          <li><a href="commissions.html" class="nav-link">Komisyonlar</a></li>
+          <li><a href="gallery.html" class="nav-link">Galeri</a></li>
+          <li><a href="program.html" class="nav-link">Program</a></li>
+          <li><a href="contact.html" class="nav-link nav-cta is-active" aria-current="page">İletişim</a></li>
+        </ul>
+      </nav>
+    </div>
+  </div>
+  <div class="nav-backdrop" id="nav-backdrop" aria-hidden="true"></div>
+
+  <main id="main-content">
+    <section class="page-hero">
+      <p class="hero-kicker">İletişim</p>
+      <h1 class="hero-title">Bize <span class="gold">ulaşın</span></h1>
+      <p class="hero-subtitle">Sorularınız için formu doldurun veya WhatsApp üzerinden yazın.</p>
+    </section>
+
+    <section class="section contact-section">
+      <div class="container">
+        <div class="contact-grid reveal">
+          <form class="contact-form" id="contact-form" novalidate>
+            <div class="form-row">
+              <label for="name">Ad Soyad</label>
+              <input type="text" id="name" name="name" autocomplete="name" required minlength="2" placeholder="Adınız Soyadınız">
+              <span class="field-error" id="name-error"></span>
+            </div>
+            <div class="form-row">
+              <label for="email">E-posta</label>
+              <input type="email" id="email" name="email" autocomplete="email" required placeholder="ornek@eposta.com">
+              <span class="field-error" id="email-error"></span>
+            </div>
+            <div class="form-row">
+              <label for="message">Mesaj</label>
+              <textarea id="message" name="message" rows="5" required minlength="10" placeholder="Mesajınız..."></textarea>
+              <span class="field-error" id="message-error"></span>
+            </div>
+            <button type="submit" class="btn btn-primary">Gönder</button>
+            <p class="form-success" id="form-success" hidden role="status">Teşekkürler! Mesajınız alındı (demo).</p>
+          </form>
+          <div class="contact-side">
+            <div class="program-meta">
+              <div class="program-meta-item">
+                <strong>Konum</strong>
+                <span>Ali Ulvi Kurucu Gençlik Merkezi</span>
+              </div>
+              <div class="program-meta-item">
+                <strong>E-posta</strong>
+                <span><a href="mailto:gencmeclissimulasyonu@gmail.com">gencmeclissimulasyonu@gmail.com</a></span>
+              </div>
+            </div>
+            <div class="social-block">
+              <h3>Sosyal medya</h3>
+              <ul class="social-links">
+                <li><a href="https://instagram.com" target="_blank" rel="noopener noreferrer">Instagram</a></li>
+                <li><a href="https://twitter.com" target="_blank" rel="noopener noreferrer">X</a></li>
+                <li><a href="https://linkedin.com" target="_blank" rel="noopener noreferrer">LinkedIn</a></li>
+                <li><a href="https://youtube.com" target="_blank" rel="noopener noreferrer">YouTube</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+        <div class="faq reveal">
+          <h3 class="subsection-title">Sık sorulan sorular</h3>
+          <div class="accordion" id="faq-accordion"></div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <div class="footer-brand"><span class="logo-mark">GM</span><span>Genç Meclis © <span id="year"></span></span></div>
+      <nav class="footer-nav"><a href="index.html">Ana Sayfa</a><a href="about.html">Kurumsal</a><a href="program.html">Program</a></nav>
+    </div>
+  </footer>
+  <a href="https://wa.me/905551234567" class="whatsapp-float" target="_blank" rel="noopener noreferrer" aria-label="WhatsApp"><svg width="28" height="28" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.435 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg></a>
+  <script src="js/script.js" defer></script>
+</body>
+</html>

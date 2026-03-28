@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Akademi ve organizasyon ekibi — Genç Meclis Simülasyonu.">
+  <meta property="og:title" content="Ekip | Genç Meclis Simülasyonu">
+  <title>Ekip | Genç Meclis Simülasyonu Programı</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,600;0,700;1,400&family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,500;0,9..40,600;0,9..40,700;1,9..40,400&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body data-page="team">
+  <div id="page-loader" class="page-loader" aria-hidden="true">
+    <div class="loader-inner"><div class="loader-emblem" aria-hidden="true"></div><p class="loader-text">Genç Meclis</p><div class="loader-bar"><span class="loader-bar-fill"></span></div></div>
+  </div>
+  <a href="#main-content" class="skip-link">İçeriğe geç</a>
+  <div class="site-top" id="site-header">
+    <div class="site-top__bg" aria-hidden="true"></div>
+    <div class="header-inner">
+      <a href="index.html" class="logo-link" aria-label="Ana sayfa"><span class="logo-mark">GM</span><span class="logo-text">Genç Meclis</span></a>
+      <button type="button" class="nav-toggle" id="nav-toggle" aria-expanded="false" aria-controls="primary-nav" aria-label="Menü"><span></span><span></span><span></span></button>
+      <nav class="primary-nav" id="primary-nav" aria-label="Ana menü">
+        <ul>
+          <li><a href="index.html" class="nav-link">Ana Sayfa</a></li>
+          <li><a href="about.html" class="nav-link">Kurumsal</a></li>
+          <li><a href="team.html" class="nav-link is-active" aria-current="page">Ekip</a></li>
+          <li><a href="commissions.html" class="nav-link">Komisyonlar</a></li>
+          <li><a href="gallery.html" class="nav-link">Galeri</a></li>
+          <li><a href="program.html" class="nav-link">Program</a></li>
+          <li><a href="contact.html" class="nav-link nav-cta">İletişim</a></li>
+        </ul>
+      </nav>
+    </div>
+  </div>
+  <div class="nav-backdrop" id="nav-backdrop" aria-hidden="true"></div>
+
+  <main id="main-content">
+    <section class="page-hero">
+      <p class="hero-kicker">Ekip</p>
+      <h1 class="hero-title">Akademi &amp; <span class="gold">Organizasyon</span></h1>
+      <p class="hero-subtitle">Mentorluk, içerik ve saha operasyonlarında uzman kadromuzla tanışın.</p>
+    </section>
+
+    <section class="section team-section">
+      <div class="container">
+        <header class="section-header reveal">
+          <span class="section-label">Koordinasyon</span>
+          <h2 class="section-title">Genel Koordinatör</h2>
+        </header>
+        <div class="program-intro reveal">
+          <p><strong>Dilara Adıyaman</strong></p>
+          <p>Karatay Genç Meclis’in planlama aşamasından uygulama sürecine kadar uzanan yolculuğunda, tüm ekiplerin uyum içinde çalışmasını sağlayan önemli bir sorumluluk vardır: Genel Koordinatörlük.</p>
+          <p>Bu görev; sadece süreci takip etmek değil, aynı zamanda ekipler arasında güçlü bir iletişim kurarak ortak hedef doğrultusunda ilerlemeyi sağlamaktır. Programın düzenli, verimli ve güçlü bir şekilde ilerlemesinde koordinasyon büyük bir rol oynar.</p>
+          <p>Karatay Genç Meclis’te bu önemli görevi üstlenen isim Dilara Adıyaman’dır. Sorumluluk bilinci, disiplinli çalışma anlayışı ve ekip ruhunu güçlendiren yaklaşımıyla sürecin her aşamasında aktif bir rol üstlenmektedir.</p>
+          <p>Ortaya çıkan uyum ve üretkenlik, güçlü bir koordinasyonun en güzel yansımalarından biridir. Bu yapının merkezinde ise süreci titizlikle yöneten Dilara Adıyaman bulunmaktadır.</p>
+        </div>
+
+        <header class="section-header reveal">
+          <span class="section-label">Filtrele</span>
+          <h2 class="section-title">Tüm üyeler</h2>
+        </header>
+        <div class="filter-bar reveal" role="tablist" aria-label="Ekip filtresi">
+          <button type="button" class="filter-btn active" data-filter="all" role="tab" aria-selected="true">Tümü</button>
+          <button type="button" class="filter-btn" data-filter="academy" role="tab" aria-selected="false">Akademi</button>
+          <button type="button" class="filter-btn" data-filter="organization" role="tab" aria-selected="false">Organizasyon</button>
+        </div>
+        <div class="team-grid" id="team-grid"></div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <div class="footer-brand"><span class="logo-mark">GM</span><span>Genç Meclis © <span id="year"></span></span></div>
+      <nav class="footer-nav"><a href="index.html">Ana Sayfa</a><a href="commissions.html">Komisyonlar</a><a href="contact.html">İletişim</a></nav>
+    </div>
+  </footer>
+  <a href="https://wa.me/905551234567" class="whatsapp-float" target="_blank" rel="noopener noreferrer" aria-label="WhatsApp"><svg width="28" height="28" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.435 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg></a>
+
+  <div class="modal-root" id="modal-root" aria-hidden="true">
+    <div class="modal-backdrop" data-close-modal></div>
+    <div class="modal-dialog" role="dialog" aria-modal="true" aria-labelledby="modal-title">
+      <button type="button" class="modal-close" data-close-modal aria-label="Kapat">&times;</button>
+      <h2 id="modal-title" class="modal-title"></h2>
+      <div class="modal-body" id="modal-body"></div>
+    </div>
+  </div>
+  <script src="js/script.js" defer></script>
+</body>
+</html>
